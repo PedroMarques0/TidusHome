@@ -1,0 +1,92 @@
+/* Barre de Navigation*/
+
+:root {
+  --marron: #7f5539;
+}
+
+#logo {
+  width: 7rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #7f5539;
+  width: 100%;
+  font-size: 1.2rem;
+  font-style: inter;
+}
+
+/* MAIN*/
+main .background {
+  background-image: url(background.svg);
+  background-size: cover;
+  height: 400px;
+  background-position: 10% 30%;
+  display: flex;
+  align-items: center;
+}
+
+main .titre { 
+  background-color: #d9d9d9;
+  width: 300px;
+  height: 100px;
+  margin-left: 45rem;
+  border-radius: 80px 10px;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+/* main .mission {
+    
+} */
+
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+}
+
+main .mission{
+  float: right;
+}
+
+ main .missionImg {
+    display: flex;
+    float: right;
+    width: 30rem;
+    height: 20rem;
+}
+
+main>.mission>p {
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    align-items: center;
+    padding-top: 6 rem;
+    padding-left: 6rem;
+    padding-right: 2rem;
+    line-height: 2rem ;
+} 
+
+main .imgservice {
+    
+}
+
+
+
