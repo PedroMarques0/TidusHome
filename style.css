@@ -4,10 +4,14 @@
   --marron: #7f5539;
 }
 
-#logo {
-  width: 7rem;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+header{
+  position: fixed;
+  height: 40px;
+  width: 100%;
+}
+
+header #logo {
+  width: 7rem; 
 }
 
 nav {
@@ -21,72 +25,223 @@ nav > ul > li > a {
 
 nav > ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #7f5539;
   width: 100%;
   font-size: 1.2rem;
-  font-style: inter;
+  font-family: 'Merienda';
 }
-
-/* MAIN*/
+/* Img et h1 */
 main .background {
-  background-image: url(background.svg);
-  background-size: cover;
+  background-image: url(/Images/titre.jpg);
   height: 400px;
+  min-height: 100vh;
   background-position: 10% 30%;
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-main .titre { 
+main .titre {
   background-color: #d9d9d9;
-  width: 300px;
-  height: 100px;
-  margin-left: 45rem;
+  width: 40rem;
+  height: 10rem;
+  margin-left: 55%;
   border-radius: 80px 10px;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 5.5rem;
+  font-size: 2.5rem;
+  box-shadow: 5px 5px rgba(239, 135, 29, 1);
+}
+main .titre h1{
+  color: var(--marron);
+  text-shadow: 5px 1px beige;
+  margin-top: -4.5rem;
+  font-family: 'Merienda';
+  font-size: 3.5rem;
+}
+main .titre #ptitre{
+color: var(--marron);
+margin-top: 1.5rem;
+font-family: 'Merienda';
+text-shadow: 5px 1px beige;
+font-size: 1.5rem;
 }
 
-/* main .mission {
-    
-} */
-
-
+/*Notre Mission*/
 h2 {
   text-align: center;
+  font-size:2rem;
   font-weight: bolder;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-
+ ;
 }
-
-main .mission{
+ #partie1 {
   float: right;
+  padding:1rem;
+  padding-right: 5rem;
+  padding-left:5rem ;
+  padding-bottom: 8rem;
+  padding-top: 4rem;
 }
 
- main .missionImg {
-    display: flex;
-    float: right;
-    width: 30rem;
-    height: 20rem;
+#partie1 .missionImg {
+  float: right;
+  width: 30rem;
+  height: 20rem;
+  
+}
+#partie1 p {
+  width: 50%;
+  height: 40%;
+  text-align: justify;
+  align-items: center;
+  padding-top: 6 rem;
+  margin-top: 4rem;
+  line-height: 3rem;
+  font-size: 20px;
+  font-family: 'Merienda';
 }
 
-main>.mission>p {
-    width: 50%;
-    height: 40%;
-    text-align: center;
-    align-items: center;
-    padding-top: 6 rem;
-    padding-left: 6rem;
-    padding-right: 2rem;
-    line-height: 2rem ;
+#partie2 h2{
+margin-bottom: 3%;
+
+}
+#partie2 .containerorange {
+  width: 90%;
+  height: 37.5rem;
+  background-color: #ffe5d9;
+  margin: auto;
+  border-radius: 10px 70px 10px 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  gap: 50px;
+  padding-top: 50px;
+  padding-right: 8rem;
+}
+
+#partie2 .bloc1 .bloc2 .bloc3 {
+  width:33%;
+  height: 60%;
+  margin: auto;
 } 
 
-main .imgservice {
-    
+#partie2 .bloc1 .img1 {
+  width: 75%;
+  margin-left: 7rem;
+  height: 60%;
+  margin-top: 20px;
+}
+
+#partie2 .bloc2 .img2 {
+  width: 341px;
+  height: 60%;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+#partie2 .bloc3 .img3 {
+  width: 250px;
+  height: 65%;
+  margin-left: 50px;
+}
+
+#partie2 .sstitre1{
+  width:60%;
+  height: 60%;
+  margin: auto;
+  padding-top: 2rem;
+
+}
+#partie2 .sstitre2{ 
+  width:70%;
+  height: 60%;
+  margin: auto;
+  padding-top: 2rem;
+
+}
+#partie2 .sstitre3{
+  width:60%;
+  height: 60%;
+  margin: auto;
+  padding-top: 1.5rem;
+
+}
+#partie2 h3{
+  text-align: center;
+  font-size:1.5rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+
+}
+#partie2 p{
+  text-align: justify;
+  align-items: center;
+  line-height: 2rem;
+}
+
+#partie3 .backgroundPate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#partie3 .backgroundPate .bloc1, .bloc2, .bloc3 {
+width: 30%;
 }
 
 
-
+/* FOOTER */
+footer {
+  padding: 40px 0;
+  background-color: #7f5539;
+  color: #ffe5d9;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+footer li {
+  padding: 0 10px;
+}
+footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+footer ul a:hover {
+  opacity: 1;
+}
+footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+footer .social > a:hover {
+  opacity: 0.9;
+}
+footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}

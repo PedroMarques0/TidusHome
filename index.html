@@ -4,73 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tidus Home</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
   </head>
   <body>
     <header>
+      <!-- BARRE DE NAV -->
       <nav>
         <a href="index.html">
           <img src="Images/logonav.png" alt="Logo" id="logo" />
         </a>
 
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="#">Nos supers chiens</a></li>
-          <img src="" alt="">
-          <li><a href="#">Nos supers chats</a></li>
+          <li id="home"><a href="index.html">Accueil</a></li>
+          <li id="chien"><a href="#">Nos supers chiens</a></li>
+          <li id="chat"><a href="#">Nos supers chats</a></li>
           <li id="contact"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="background">
-       <div class="titre">
-         <h1> Tidus Home </h1>
-         <p>"Faire le bien en adoptant responsablement"</p>
-       </div>
-    </div>
-    <div class="mission">
-        <h2>Notre Mission</h2>
-        <img src="Capture.PNG" alt="Chien et Chat" class="missionImg">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero minima cupiditate fugit doloribus ipsa eaque accusamus incidunt laborum, accusantium dolorem esse rem, tempora consequatur adipisci asperiores. Laudantium cum fuga fugit, fugiat magnam provident rerum impedit! Vero, ea? Soluta voluptates optio hic unde voluptatem, dolorem, officiis iusto vitae harum numquam sint.</p>
-    </div>
-
-    <div class="service">
-        <h2>Nos Services</h2>
-        <div class="imgservice">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima expedita nostrum quos alias obcaecati architecto.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat saepe qui quia at minima fugiat?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea debitis quia porro aliquid rerum minus.</p>
+      <!-- TETE DE PAGE -->
+        <div class="background">
+          <div class="titre">
+            <h1>Tidus Home</h1>
+            <p id="ptitre">"Faire le bien en adoptant responsablement"</p>
+          </div>
         </div>
-    </div>
 
-    <div class="bienvenue">
+        <!-- NOTRE MISSION -->
+      <section id="partie1"> 
+          <h2>Notre Mission</h2>
+          <img src="Images/chien et chat.PNG" alt="Chien et Chat" class="missionImg" />
+          <p>
+            TIDUS Home a pour mission de sauver et de trouver des foyers aimants 
+            pour nos amis à quatre pattes. Notre engagement envers le bien-être de 
+            nos amis et des adoptants est au cœur de tout ce que nous faisons. Nous 
+            travaillons inlassablement pour offrir une seconde chance à chaque chien 
+            et chats dans le besoin.
+          </p>
+      </Section>
+
+      <!-- NOTRE SERVICE -->
+      <section id="partie2">
+          <h2>Nos Services</h2>
+          <div class="containerorange">
+            <div class="bloc1">
+              <img src="/Images/sauv.png" class="img1" width=90%>
+              <div class="sstitre1">
+                <h3>Sauvetage</h3>
+                 <p>intervention pour secourir les chiens
+                maltraités, abandonnés, ou en danger</p>
+              </div>   
+            </div>
+            <div class="bloc2">
+              <img src="Images/adoption.png" alt="" class="img2" width=90%>
+              <div class="sstitre2">
+                <h3>Adoption Responsable</h3>
+                 <p>Offrir une chance à un animal qui
+                  a besoin de vous et vous de lui</p>
+              </div>
+            </div>
+            <div class="bloc3">
+              <img src="Images/conseil.png" alt="" class="img3">
+              <div class="sstitre3">
+                <h3>Conseils et suivis</h3>
+                 <p>intervenons pour secourir les chiens maltraités, abandonnés, ou en danger</p>
+              </div>
+           </div>
+          </div>
+       </Section>
+
+        <!-- BIENVENUE -->
+      <section id="partie3">
         <h2>Bienvenue à</h2>
-        <div class="Bvimg">
+        <div class="backgroundPate">
+          <div class="bloc1">
+            <img src="Images/n1.jpg" alt="">
+            
+          </div>
+          <div class="bloc2">
+            <img src="Images/n2.jpg" alt="">
+
+          </div>
+          <div class="bloc3">
+            <img src="Images/n3.jpeg" alt="">
+          </div>
         </div>
-    </div>
+      
+      </section>
+    </main>
 
-    <footer>
-        <div class="logofooter"><img src="" alt="logo"></div>
-        <ul>
-            <li>Association</li>
-            <li>Plan du Site</li>
-            <li>Mentions legales</li>
-            <li>Politique de confidentialité</li>
-            <li>Contactez-nous</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
-
-        </ul>
-    </footer>
-
-
-
-</main>
-
-
-
-  </body>
+      <!-- FOOTER -->
+      <section class="partie4">
+        <footer>
+          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Home</a></li>
+              <li class="list-inline-item"><a href="#">Services</a></li>
+              <li class="list-inline-item"><a href="#">About</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Tidus Home © 2023</p>
+            </footer>
+      </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+ </body>
 </html>
